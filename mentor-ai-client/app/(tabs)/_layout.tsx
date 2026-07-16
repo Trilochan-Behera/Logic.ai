@@ -19,6 +19,15 @@ export default function TabLayout() {
             ),
           }}
         />
+                 <Tabs.Screen
+          name="smart"
+          options={{
+            title: "Smart",
+            tabBarIcon: ({ color }) => (
+              <Ionicons name="pulse-outline" size={24} color={color} />
+            ),
+          }}
+        />
 
         <Tabs.Screen
           name="practice"
@@ -36,24 +45,6 @@ export default function TabLayout() {
             title: "Analysis",
             tabBarIcon: ({ color }) => (
               <Ionicons name="analytics" size={24} color={color} />
-            ),
-          }}
-        />
-         <Tabs.Screen
-          name="smart"
-          options={{
-            title: "Smart",
-            tabBarIcon: ({ color }) => (
-              <Ionicons name="pulse-outline" size={24} color={color} />
-            ),
-          }}
-        />
-        <Tabs.Screen
-          name="ca"
-          options={{
-            title: "CA",
-            tabBarIcon: ({ color }) => (
-              <Ionicons name="ca" size={24} color={color} />
             ),
           }}
         />
